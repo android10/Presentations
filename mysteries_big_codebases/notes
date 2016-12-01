@@ -1,0 +1,202 @@
+Hidden mysteries behind big mobile codebases (lessons learned).
+
+You have a really cool and impactful project, but as soon as your codebase gets bigger, and more and more contributors come into play, things can become challenging in regards to aspects like: code consistency, technical debt, refactoring, application architecture and team organization. Let's jump onboard on this journey and walk through different techniques that can help us keep our code sane and healthy for better scalability. 
+Disclaimer: This talk is going to be focused from a mobile standpoint but most of the practices included can also be applied to any software project under development. 	
+
+Why this talk: lessons learned. Evolution. Experiences. I have something to say. 
+
+Let me tell you a story...
+
+#1
+Jon was a happy developer...
+...with a lightweight pet project
+...was the only maintainer
+One man Development Process Model
+------------
+It was like a baby for him...
+
+
+#2
+At some point in time...
+Project started growing...
+More features were required...
+Jon was very happy for its success...
+At some point in time...someone believed in that project
+So that project started to have way more features...and it started growing...
+
+
+#3
+But things started to get complicated...
+People jumping onboard (More people needed)
+More requirements which implied that the code base started to grow without control 
+Plus no tests and inconsistency 
+More contributors started to come into play
+Plus no tests, which makes the application unsustainable. 
+But...the more features were added, the less happier Jon was... (myabe create a time line with Jon's mood)
+
+
+#4 
+Application became unsustainable... Why this this happens?
+More requirements/features
+More contributors
+More users
+Time to market and dealines
+Complexity goes up
+
+
+#5 
+And many questions need an answer:
+Is our codebase prepare to scale?
+Is it hard to maintain? 
+What about technical debt?
+How to keep it healty?
+Is it easy to onboard new people coming onboard?
+What about our team organization?
+
+
+#6
+Start with a little app that barely has complexity so only one developer can maintain it. Afterwards when app grows: different team organization, feature teams, conway's law. Many contributors.
+
+
+#7 
+Soundcloud: From a monolith to a microservices architecture (that is what happened at soundcloud)
+(Scalability problem) ---> At SoundCloud we talked many times about this
+Does this apply to mobile? Of course, nowadays they have same or even more complexity: it is not just a dumb client
+that showes data: we struggle with battery life, connections availability, performance, complex UIs, complex business logic, etc
+In order to support all this we cannot build a house from the roof
+
+
+#8
+Demo: Soundcloud Listeners app repo
+Show the video of github in 3D and all the contributions (https://github.com/acaudwell/Gource) https://opensource.com/business/16/8/intro-to-gource
+
+
+#9 
+What can we do in order to support Big mobile code bases?
+#Disclaimer: no silver bullets...(the small letters) joke maybe and put it very very small...no one reads the small letter...
+So I would like to walk you through different aspects that I consider very importants when dealing with these kind of problems.
+I will focus mainly on code base but it is worth mentioning other aspects like Team Organization, Processes we have, and how to work together. 
+(main focus but I would like to mention other aspects that are important in order to support what I'm mentioning here)
+
+
+
+#10
+Codebase 
+	Code worst enemies:
+		- Size
+		- Complexity
+		- Flaky tests
+		- Anti-patterns: Lava, bulkheading, (search for more critical anti-patterns)
+		- Abbandoned code
+
+	If your code is hard to work with, change it!
+
+	How we can battle this enemies and conquer a large mobile code base?
+	- Architecture matters (picture of your project has many architectures) ---> (many architectures, not only one) - Why is important to architecture (Sacrificial architecture) Pick up and architecture and stick to it. - New requirements and scalability requires a new architecture (to get up to speed when adding new functionalities, code consistency).
+	- in an small project you can go for a Sacrificial architecture approach
+	- Code Consistency
+	- Picture of a good and bad example (maybe a big switch and on the other side something that is not gonna scale, or a god class)
+	- Anti Patterns (lava anti-pattern)
+	- A reliable test battery
+	- Software engineering good practices come into play. 
+
+	- Technical Debt: "Indebted code is any code that is hard to scan. Technical debt is anything that increases the difficulty of reading code."
+	(put a picture of some incosistency: a god class)
+	- Addressing technical debt: Tech Radar: technical debt meetings, it is important to not create a snow ball effect because otherwise the bomb will exploit 
+	- Tech Radar for technical debt
+
+	- Dependencies (upgrading dependencies or introducing a new one)
+
+	- Documentation (it is always outdated but some minimun is important: code should be self explanatory: example of it and contra example). At least a few pictures of the architecture: good for onboarding people. 
+
+	Once we reach to a level of healthiness, what should we do? This is what we do at SoundCloud.
+	Keep it up!
+	- Work as a team
+	- Continuous Refactor (do not refactor without tests) ---> Continuos improvement 
+	- Be a good boy scout
+	- Share logic and common functionality accross applications: android-kit, skippy. Share common functionality. Avoid duplication: reusable components
+	- Work Mature Continuous Integration Pipeline (Continuos building, continuos integration and continuos delivery) (this is critical)	
+	- Static analysis SC Android App 
+	- Reliable test battery: unit, integration and acceptance tests. (related with the CI)
+
+
+Lessons learned (give examples of all of these points)
+	- Lessons learned: decorate third party libraries, do not overthink too much (although there are certain things that must be considered from day on).
+	- Lessons learned: Early optimizations is bad, unless is a core part of your business. First rule of optimization: always meassure. I've tried profiling, looking for bottlenecks
+	- Never trial/error: divide and conquer: Maybe tell the story of Firebase we had?
+	- Prevention is better than cure
+
+But all this is not gonna work if we do not have a good...
+#Team Organization
+	- Why is this important? 
+		Communication
+		Conways Law
+		Features ownership
+	How are we organized?
+		- Android Tech Lead
+		- Core team (build tools for other developers)
+		- Feature teams (working together: explain everyone's responsibilities)
+		- Test engineering team
+	Platform Team: Android, iOS, Web
+		- Technical decisions happen at a platform level team: Android Collective Sync: discussions, concerns, anything can be brought to the table. 
+	Remote teams
+
+#What is our working culture/methodology as Team then? in other words, how do we work together? 
+	- Work and share knowledge with other platforms: in the end we face the same challenges. Feature Paricy. iOS. 
+	- Version control: PRs
+	- Pair Programming (transfer knowledge, helpful for onboarding people)
+	- Collective Sync meeting for discussions.
+
+What processes do we follow when...?
+#Processes
+	- Onboarding new people (technical sessions company wide and with the team, pair programming)
+	- Hiring people: we take an important part of the process: we have the final decision on who we want to work with. (everything is to avoid unconscious bias: explain what this is).
+	- Sheriff: flakiness is a reality and acceptance tests are flaky by nature due to network conditions, etc. Minimize flakyness.
+	- Releasing: Release trains + release captains (supported by our CI pipeline)
+	- Alpha for internal use (Dog fooding)
+	- Beta (feedback received by the community is very valuable)
+
+
+#Conclusion
+I wanted to summarize also how we work at SoundCloud, focusing mostly on our codebase but everything must be glued in order to work in harmony. 
+Software development is a joyful ride (picture of a bike) (put a while (true) and list all the points mentioned)
+Make it fun
+
+It has been probbed that fun is related to get things done.
+
+
+
+#Links:
+http://steve-yegge.blogspot.de/2007/12/codes-worst-enemy.html
+http://www.slideshare.net/latcraft/architecture-vs-code?qid=1b0a83a3-98ff-47f9-ae53-58d78bb5692b&v=&b=&from_search=22
+http://www.slideshare.net/meekrosoft/cleaning-code-accufinal?qid=1b0a83a3-98ff-47f9-ae53-58d78bb5692b&v=&b=&from_search=3
+http://www.slideshare.net/SiliconStraitsSaigon/one-man-development-process-model?qid=1b0a83a3-98ff-47f9-ae53-58d78bb5692b&v=&b=&from_search=9
+http://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html
+http://codereview.stackexchange.com/questions/42125/refactoring-large-switch-statement
+https://www.thoughtworks.com/de/insights/blog/demystifying-conways-law
+
+
+#Awesome Phrases from other talks:
+Please – don't think I'm implying that I'm a great programmer. Far from it. I'm a programmer who's committed decades of terrible coding atrocities, and in the process I've learned some lessons that I'm passing along to you in the hopes that it'll help you in your quest to become a great programmer.
+
+
+#Gource:
+gource -1280x720 --fullscreen --multi-sampling -a 0.1 --time-scale 3.0 --loop -i 3600
+gource -f -1280x720
+https://howto8165.wordpress.com/2014/09/02/gource-visualize-git-logs/
+
+#Count lines of code from a git repository
+git ls-files | xargs wc -l
+
+
+#Key words 
+- get on board
+- super complicated
+- problems we are facing
+- avoid banging your head against a brick wall
+- chase a rabbit hole
+- guesses and speculations
+- violate SOLID principles
+
+
+
