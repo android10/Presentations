@@ -4,6 +4,7 @@ Presentations:
 =========================
 
 - <a href="https://speakerdeck.com/android10/hidden-mysteries-behind-big-mobile-codebases" target="_blank">Hidden mysteries behind big mobile codebases.</a>
+- <a href="https://speakerdeck.com/android10/hidden-mysteries-behind-big-mobile-codebases-reloaded" target="_blank">Hidden mysteries behind big mobile codebases RELOADED.</a>
 
 
 <br>
