@@ -6,6 +6,8 @@ build-lists: true
 
 ## hidden mysteries behind **big mobile codebases.**
 
+### 'reloaded edition' ###
+
 #### <br>@fernando_cejas
 
 ^ You have a really cool and impactful project, but as soon as your codebase gets bigger, and more and more contributors come into play, things can become challenging in regards to aspects like: code consistency, technical debt, refactoring, application architecture and team organization. Let's jump onboard on this journey and walk through different techniques that can help us keep our code sane and healthy for better scalability. 
@@ -20,7 +22,7 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 - __*Curious learner*__<br>
 - __*Software engineer*__<br>
 - __*Speaker*__<br>
-- __*Work at @soundcloud*__<br>
+- __*Works at @soundcloud*__<br>
 - __*fernandocejas.com*__
 
 ^ When I really have something to say, I either create a presentation or write a post.
@@ -33,17 +35,19 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 # **This begins with a story...**
  
-- Jon was a happy developer
-- He had a lightweight pet project
-- He was the only maintainer
+- You are a happy developer
+- You have a lightweight pet project
+- You are the only maintainer
 
-^ The project was like a baby for him.
+^ The project is like a baby for you.
 
 ---
 
 ![](coding01.jpg)
 
 # [fit] **One man Development Process Model.**
+
+picture of one man development process (gif?)
 
 ^ Easy to maintain.
 ^ Technical decisions are made by only one person.
@@ -55,11 +59,15 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 # **At some point in time...**
 
-- Project started to grow...
-- More features were required...
-- Jon was very happy for its success...
+- Project starts to grow...
+- More features are required...
+- You are extremely happy for its success...
 
-^ Someone believed in that project.
+^ Someone believe in that project.
+
+---
+
+picture of a happy developer
 
 ---
 
@@ -67,17 +75,23 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 # **First problem: Success!**
 
-...more and more users using the application. 
+...your user base grows. 
+
+picture of soundcloud app from google play
 
 ---
 
 ![](coding01.jpg)
 
-# **Second problem: Success!**
+# **Success under the hoods**
 
-- Code started to grow.
+- Codebase grows.
 - No tests.
-- Inconsistency across the codebase.
+- Inconsistency across the code.
+
+---
+
+picture of an unsustainable situation 
 
 ---
 
@@ -106,6 +120,10 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 ---
 
+picture of a bunch of facts
+
+---
+
 ![](coding01.jpg)
 
 # Fact **#1**
@@ -120,11 +138,17 @@ _**If your codebase is hard to work with...then change it!**_
 
 - From a monolith to a microservices architecture.
 
+picture of a monolith to a microservices architecture.
+
+^ How we have evolved our codebase in the server side. 
+
 ---
 
 ![](coding01.jpg)
 
-# [fit] **Soundcloud Listeners app repo.**
+# [fit] **Soundcloud Listeners app repo evolution.**
+
+picture of some kind of evolution?
 
 ---
 
@@ -326,7 +350,15 @@ _**Architecture matters:**_
 
 ---
 
-# **Architecture**
+android architecture picture
+
+---
+
+backend architecture: include bff, microservices, clients: web, iOS, Android
+
+---
+
+# **Architecture Android**
 
 ```java
 												public class MainActivity extends PlayerActivity {
@@ -382,7 +414,7 @@ _**Architecture matters:**_
 
 ---
 
-# **Architecture**
+# **Architecture Android**
 
 ```java
 			public class StreamFragment extends LightCycleSupportFragment<StreamFragment>
@@ -442,7 +474,7 @@ _**Code evolution implies:**_
 
 - Code evolution.
 - Boy scouting.
-- Step by Step.
+- Baby steps.
 
 ---
 
@@ -471,6 +503,8 @@ _**Code evolution implies:**_
 	    }
 	}
 ```
+
+^ This code clearly violates the open close SOLID principle, which stands that a class should be open for extension and close for modification. 
 
 ---
 
@@ -510,6 +544,8 @@ _**Code evolution implies:**_
 	}
 ```
 
+^ Now you are not touching your domain anymore, you just need to add a new processo to your processors Map
+
 ---
 
 ![](coding01.jpg)
@@ -517,6 +553,8 @@ _**Code evolution implies:**_
 # Fact **#4**
 
 _**Rely on a good test battery that backs you up.**_
+
+^ Why is this important? Technical debt, refactoring, introducing new things to your codebase. 
 
 ---
 
@@ -540,6 +578,8 @@ _**Rely on a good test battery that backs you up.**_
 
 _**Do not let technical debt beat you.**_
 
+picture of technical debt?
+
 ---
 
 ![](coding01.jpg)
@@ -553,9 +593,20 @@ _**Do not let technical debt beat you.**_
 
 ![](coding01.jpg)
 
+# **Technical Debt Radar**
+
+picture of technical debt radar
+
+---
+
+![](coding01.jpg)
+
 # Fact **#6**
 
 _**Favor code readability over performance unless the last one is critical for your business.**_
+
+^ Martin Fowler's quote: Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+^ John Woods's quote: Always code as if the person who will maintain your code is a maniac serial killer who knows where you live. 
 
 ---
 
@@ -566,6 +617,10 @@ _**Favor code readability over performance unless the last one is critical for y
 - First rule: Always measure.
 - Encapsulate complexity.
 - Monitor it.
+
+---
+
+picture of performance monitoring with prometheus?
 
 ---
 
@@ -588,6 +643,10 @@ _**Share logic and common functionality accross applications.**_
 
 ---
 
+picture of the android app with those dependencies?
+
+---
+
 ![](coding01.jpg)
 
 # Fact **#8**
@@ -600,6 +659,13 @@ _**Automate all the things!**_
 
 # **At SoundCloud**
 
+- Continuous building.
+- Continuous integration.
+- Continuous deployment. 
+
+---
+
+picture of:
 - Continuous building.
 - Continuous integration.
 - Continuous deployment. 
@@ -638,6 +704,10 @@ _**Work as a team.**_
 
 ---
 
+picture of team organization at SC
+
+---
+
 ![](coding01.jpg)
 
 # **Working culture**
@@ -652,21 +722,13 @@ _**Work as a team.**_
 
 ![](coding01.jpg)
 
-# Fact **#10**
-
-_**We work with people, computers are means to reach out to people.**_
-
----
-
-![](coding01.jpg)
-
 # **Processes**
 
 - Onboarding new people.
 - Hiring people.
 - Sheriff.
 - Releasing: Release train model + release captains.
-- Alpha for internal use.
+- Alpha for internal use (Dog fooding).
 - Beta community.
 
 ---
@@ -691,7 +753,6 @@ _**We work with people, computers are means to reach out to people.**_
 - **#7** Share logic and common functionality accross applications.
 - **#8** Automate all the things.
 - **#9** Work as a team.
-- **#10** We work with people, computers are means to reach out people.
 
 ---
 
@@ -702,6 +763,8 @@ _**We work with people, computers are means to reach out to people.**_
 - Use **S.O.L.I.D**
 - Software development is a **joyful ride.**
 - Make it **fun.**
+
+^ It has been proven that fun is tightly coupled to getting things done.
 
 ---
 
