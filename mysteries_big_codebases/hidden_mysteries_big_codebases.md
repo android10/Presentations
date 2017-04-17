@@ -2,7 +2,7 @@ theme: Fira, 2
 autoscale: true
 build-lists: true
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 ## hidden mysteries behind **big mobile codebases.**
 
@@ -13,7 +13,7 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Meet @fernando_cejas**
 
@@ -29,7 +29,7 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **This begins with a story...**
  
@@ -41,7 +41,7 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # [fit] **One man Development Process Model.**
 
@@ -51,7 +51,7 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **At some point in time...**
 
@@ -63,7 +63,7 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **First problem: Success!**
 
@@ -71,7 +71,7 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Second problem: Success!**
 
@@ -81,7 +81,7 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Unsustainable situation. Why?**
 
@@ -92,7 +92,7 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Many questions to answer.**
 
@@ -106,7 +106,7 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # Fact **#1**
 
@@ -114,7 +114,7 @@ _**If your codebase is hard to work with...then change it!**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Soundcloud**
 
@@ -122,13 +122,13 @@ _**If your codebase is hard to work with...then change it!**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # [fit] **Soundcloud Listeners app repo.**
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 ## **What can we do in terms of...** 
 
@@ -143,7 +143,7 @@ _**If your codebase is hard to work with...then change it!**_
 
 --- 
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # [fit] **Our Codebase and its worst enemies...**
 
@@ -284,14 +284,14 @@ _**If your codebase is hard to work with...then change it!**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # [fit] **How can we battle this enemies and**
 # [fit] **conquer a large mobile code base?**
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # Fact **#2**
 
@@ -302,7 +302,7 @@ _**Architecture matters:**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # [fit] **Pick an architecture and stick to it**
 
@@ -316,7 +316,7 @@ _**Architecture matters:**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Benefits of a good architecture:**
 
@@ -423,7 +423,7 @@ _**Architecture matters:**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # Fact **#3**
 
@@ -436,7 +436,7 @@ _**Code evolution implies:**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Refactoring**
 
@@ -512,7 +512,7 @@ _**Code evolution implies:**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # Fact **#4**
 
@@ -520,7 +520,7 @@ _**Rely on a good test battery that backs you up.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Technical debt**
 
@@ -534,7 +534,7 @@ _**Rely on a good test battery that backs you up.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # Fact **#5**
 
@@ -542,7 +542,7 @@ _**Do not let technical debt beat you.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # [fit] **Addressing and detecting technical debt:**
 
@@ -551,7 +551,7 @@ _**Do not let technical debt beat you.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # Fact **#6**
 
@@ -559,7 +559,7 @@ _**Favor code readability over performance unless the last one is critical for y
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Perfomance**
 
@@ -569,7 +569,7 @@ _**Favor code readability over performance unless the last one is critical for y
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # Fact **#7**
 
@@ -577,7 +577,7 @@ _**Share logic and common functionality accross applications.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **At SoundCloud**
 
@@ -588,7 +588,7 @@ _**Share logic and common functionality accross applications.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # Fact **#8**
 
@@ -596,7 +596,7 @@ _**Automate all the things!**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **At SoundCloud**
 
@@ -606,7 +606,7 @@ _**Automate all the things!**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Lessons learned so far:**
 
@@ -619,7 +619,7 @@ _**Automate all the things!**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # Fact **#9**
 
@@ -627,7 +627,7 @@ _**Work as a team.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Team Organization**
 
@@ -638,7 +638,7 @@ _**Work as a team.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Working culture**
 
@@ -650,7 +650,7 @@ _**Work as a team.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # Fact **#10**
 
@@ -658,7 +658,7 @@ _**We work with people, computers are means to reach out to people.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Processes**
 
@@ -671,7 +671,7 @@ _**We work with people, computers are means to reach out to people.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Recap #1**
 
@@ -683,7 +683,7 @@ _**We work with people, computers are means to reach out to people.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Recap #2**
 
@@ -695,7 +695,7 @@ _**We work with people, computers are means to reach out to people.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Conclusion**
 
@@ -705,13 +705,13 @@ _**We work with people, computers are means to reach out to people.**_
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Q & A**
 
 ---
 
-![](coding01.jpg)
+![](img/background.jpg)
 
 # **Thanks!!!**
 <br>
