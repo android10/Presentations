@@ -47,8 +47,6 @@ Disclaimer: This talk is going to be focused from a mobile standpoint but most o
 
 # [fit] **One man Development Process Model.**
 
-picture of one man development process (gif?)
-
 ^ Easy to maintain.
 ^ Technical decisions are made by only one person.
 ^ No conflicts on the code.
@@ -67,17 +65,19 @@ picture of one man development process (gif?)
 
 ---
 
-picture of a happy developer
+![inline](img/happy_developer.gif)
 
 ---
 
 ![](img/background.jpg)
 
 # **First problem: Success!**
+<br>
 
-...your user base grows. 
-
-picture of soundcloud app from google play
+```
+	Android total installs: 161.854.238 
+	iOS total installs: 122.423.077
+```
 
 ---
 
@@ -91,7 +91,7 @@ picture of soundcloud app from google play
 
 ---
 
-picture of an unsustainable situation 
+![inline](img/sad_developer.gif)
 
 ---
 
@@ -120,10 +120,6 @@ picture of an unsustainable situation
 
 ---
 
-picture of a bunch of facts
-
----
-
 ![](img/background.jpg)
 
 # Fact **#1**
@@ -137,18 +133,13 @@ _**If your codebase is hard to work with...then change it!**_
 # **Soundcloud**
 
 - From a monolith to a microservices architecture.
-
-picture of a monolith to a microservices architecture.
-
-^ How we have evolved our codebase in the server side. 
+- How we evolved our codebase on the server side.
 
 ---
 
 ![](img/background.jpg)
 
-# [fit] **Soundcloud Listeners app repo evolution.**
-
-picture of some kind of evolution?
+# [fit] **Soundcloud App Repo DEMO.**
 
 ---
 
@@ -350,11 +341,7 @@ _**Architecture matters:**_
 
 ---
 
-android architecture picture
-
----
-
-backend architecture: include bff, microservices, clients: web, iOS, Android
+![100%](img/backend_bffs_clients.png)
 
 ---
 
@@ -578,8 +565,6 @@ _**Rely on a good test battery that backs you up.**_
 
 _**Do not let technical debt beat you.**_
 
-picture of technical debt?
-
 ---
 
 ![](img/background.jpg)
@@ -595,7 +580,7 @@ picture of technical debt?
 
 # **Technical Debt Radar**
 
-picture of technical debt radar
+![right](img/tech_debt_radar.png)
 
 ---
 
@@ -620,10 +605,6 @@ _**Favor code readability over performance unless the last one is critical for y
 
 ---
 
-picture of performance monitoring with prometheus?
-
----
-
 ![](img/background.jpg)
 
 # Fact **#7**
@@ -643,10 +624,6 @@ _**Share logic and common functionality accross applications.**_
 
 ---
 
-picture of the android app with those dependencies?
-
----
-
 ![](img/background.jpg)
 
 # Fact **#8**
@@ -659,13 +636,6 @@ _**Automate all the things!**_
 
 # **At SoundCloud**
 
-- Continuous building.
-- Continuous integration.
-- Continuous deployment. 
-
----
-
-picture of:
 - Continuous building.
 - Continuous integration.
 - Continuous deployment. 
@@ -704,7 +674,7 @@ _**Work as a team.**_
 
 ---
 
-picture of team organization at SC
+![100%](img/team_organization.png)
 
 ---
 
