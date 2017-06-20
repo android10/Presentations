@@ -12,10 +12,9 @@ This hidden love between developers and designers really exists and we must take
 Jump onboard in this journey and let's explore this charming relationship, based on real use cases and experiences for creating awesome product features and functionalities.
 
 
-
 Notes:
 ------
-
+- These days, the web design process isn’t as linear as it used to be. Roles overlap and an openness to iterate frequently means that deliverables move forwards, backwards, diagonally and sideways during the life cycle of a project. In order to keep up with this, a team must communicate early and continue to communicate often. Essentially, the people in a team need to work cohesively throughout the duration of the project instead of siloing themselves in their assigned roles.
 
 
 Ideas:
@@ -26,24 +25,146 @@ Ideas:
 - How to design with developers
 
 
-
-References:
------------
+References (articles):
+----------------------
 http://humaan.com/dear-developer-love-designer/
 https://medium.com/@lukejones/designers-work-better-with-developers-ecd509a00d30#.9yyix3cg6
 http://blog.invisionapp.com/designer-developer-collaboration/
-http://humaan.com/dear-developer-love-designer/
-https://speakerdeck.com/funsize/super-happy-mobile-product-design-time
 https://speakerdeck.com/search?utf8=%E2%9C%93&q=mobile+product+design
 https://uxmag.com/articles/the-relationship-between-designers-and-developers
 https://designmodo.com/designers-developers-work/
 http://www.dtelepathy.com/blog/business/developers-designers-should-work-together
+https://getflywheel.com/layout/designers-learn-to-code/
+https://www.invisionapp.com/blog/design-with-developers-in-mind/
+
+
+References (presentations):
+---------------------------
+https://speakerdeck.com/funsize/super-happy-mobile-product-design-time
+
+
+References (articles about relationships):
+------------------------------------------
+https://www.davidwolfe.com/5-stages-love-most-people-stuck-3/
+http://www.loveatfirstfight.com/relationship-advice/relationship-stages/
+http://liveboldandbloom.com/10/relationships/stages-of-relationship
+http://www.lovepanky.com/love-couch/romantic-love/relationship-stages
 
 
 
-Slides:
+Speech and slides:
+------------------
+My introduction...
 -------
-What is design?
-What is UX?
-What is software development?
-Compatibles?
+Screenshot of the definitive guide to creating Ugly Power Point slides
+-------
+Disclaimer One: This is a "minimalist" presentation (when I mean minimalist)
+-------
+Original cover slide? Super Ugly and using Comic Sans
+-------
+Why this talk? 
+This talk was inspired from articles and experiencies. The idea is that you get some inspiration out of it.
+Last time I talked seriously about design was in 2013: https://speakerdeck.com/android10/android-ux-ui-design-patterns 
+Then in 2015 I talked about material design, at a more technical level, but still with a huge hangover after the conference's party the previous night.
+-------
+Disclaimer Two: I'm not currently working with designers as I'm part of core engineering but... 
+-------
+Product evolution over the years
+-------
+What are the parts involved nowadays in Product? Product, Management, Businness
+-------
+What is UI design?
+UI design is all about getting users as familiar with your app in as little time and with as little brainpower as possible.
+- Interaction Design 
+- Visual Design
+-------
+Product design
+Hello World Mobile Product Designer!
+It is not about the WOW factor, it is about creating a great product: https://speakerdeck.com/fcoury/design-for-developers (slide 17)
+-------
+What is engineering? What is software development?
+-------
+But this is a love/hate story for only developers and designers
+-------
+Let's put it this way: What it is easy for developers, it is not for designers (slide 4): https://speakerdeck.com/georgiknox/design-hacks-for-developers
+There is a job underestimation from both sides (we will see that is not true)
+-------
+How we work together in order to come up with cool features and products?
+How can we work together and design/develop cool features? Because this could turn into a love-hate story
+-------
+Let's explore The brain in a relationship (hemisferios) to understand a little bit better what happens at this level. 
+So we are compatible but at the same time incompatible...which makes a perfect? relationship. 
+-------
+According to some research there are different stages in a human love relationship
+What are those stages then?
+Let me get started with the stages of any love relationship.
+This love story begins with...
+-------
+- Being single
+That moment of loneliness where you do everything yourself (get rid of those bad thoughts out of your mind here please: you go to the cinema by yourself for example: you do not share many activites with anyone else)
+What happens when a developer tries to be a designer? This is the SC application if it had my design
+What happens when a designer tries to be a developer? This is the SC application if it had Sarah's code	
+
+- The date  
+compatible/incompatible. Love at first sight
+At some point you see that you cannot everything yourself and start a research:
+	- Blind Date (Tinder Match): swipping through tinder with the help of HR, interviewing people
+	- Someone introduced you a person (through friends)
+
+- The proposal (first bifurcation). There is some compatible aspects
+	- You decide to start a relationship
+	- Long distance relationship (you are working remotely)
+
+- The engagement
+In this stage everything seems perfect: you launch the perfect feature together and you decide to run a life together, even attending conferences together. Pixel perfect becomes a big thing (put some jokes), code is something you live with.  
+Little discussions happen but you avoid them
+Love is involved here. You love working with each other.
+
+- The post-endgagement (rename this. Is it necessary?)
+You start having stronger discussions and things start to bother each other
+
+Bifurcation:
+- The break-up (the cicle starts again)
+	How can we avoid the break-up?
+	The pilars of any relationship: respect, communication, honesty, care, responsibility, patience (https://www.slideshare.net/arifanees/psychology-of-love)
+	Contributions as individuals are easier, but what happens when working as teams?
+- Living together
+	They ended up married (or not) but they are happy forever anyway. (old people discuss anyway: https://www.google.de/search?q=retired+people+funny+discussions&oq=retired+people+funny+discussions&aqs=chrome..69i57.5159j0j1&sourceid=chrome&ie=UTF-8)
+-------
+How can developers help designers?
+- Giving technical know-how (what is viable and what is not)
+- Give an overview on how things work 
+- Offer constructive design critique (provide a different perspective: more focused on the experience or functionality)
+- Communicate constraints 
+-------
+How can designers help developers?
+- Use an actual asset management or version control system. (Zeplin)
+- Keep everything as vectors, and scaleable effects
+- Use the platform's idioms
+- Use genuine or at least realistic content (Lorem ipsum is not found anywhere in the design)
+-------
+How can we work together and design/develop cool features?
+- Establish a clear and consistent workflow
+- Never assume it is easy
+- Don't micro manage (http://mattgemmell.com/how-developers-can-help-designers/)
+- Mutual respect (Mutual respect gets rid of the us and them mindset. It helps develop better relationships by creating a happier environment.)
+- Work in a harmonious, cross-collaborative environment.
+- We both approach problem from different angles: Creativity exist in both sides.
+- Feedback is key from both sides
+- http://uxmag.com/articles/so-agile-together (put the points here)
+Extra ball: there are different types of love, but what we want is...
+-------
+What is the moral of the fable?
+	Everything is about communication. Work in harmony.
+	"Better products result when your creative mind and devs' analytical genius work together."
+
+	The creation of any kind of software is (or should be) a partnership between graphic design, interaction design, and implementation. None of these disciplines is any less important than another, and all are vital. By being aware of the needs of those working in other fields, we can be more effective and valuable in our own work.
+
+	As I said in my previous article, design and development are two inseparable halves of the process of creating quality software. Professionals on both sides should always strive to work together as effectively and respectfully as possible.
+
+	If I adapt to their processes, they adapt to my processes. If I respect their time, they respect my time, and if I get them involved, they’ll get me involved too. It works both ways. We all win.
+--------
+Q&A
+--------
+Thanks
+--------
