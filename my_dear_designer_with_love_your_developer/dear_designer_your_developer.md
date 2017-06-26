@@ -45,7 +45,7 @@ And you can also geocitize a web: http://www.wonder-tonic.com/geocitiesizer/
 
 ---
 
-![](img/background_main.jpg)
+![](img/kylie_timpani.png)
 
 ## Why **THIS TALK?**
 
