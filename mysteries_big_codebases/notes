@@ -20,7 +20,7 @@ It was like a baby for him...
 At some point in time...
 Project started growing...
 More features were required...
-Jon was very happy for its success...
+Jon was very happy for his success...
 At some point in time...someone believed in that project
 So that project started to have way more features...and it started growing...
 
@@ -36,7 +36,7 @@ But...the more features were added, the less happier Jon was... (myabe create a 
 
 
 #4 
-Application became unsustainable... Why this this happens?
+Application became unsustainable... Why this happens?
 More requirements/features
 More contributors
 More users
@@ -55,14 +55,14 @@ What about our team organization?
 
 
 #6
-Start with a little app that barely has complexity so only one developer can maintain it. Afterwards when app grows: different team organization, feature teams, conway's law. Many contributors.
+Start with a little app that barely has complexity so only one developer can maintain it. Afterwards when the app grows: different team organization, feature teams, conway's law. Many contributors.
 
 
 #7 
 Soundcloud: From a monolith to a microservices architecture (that is what happened at soundcloud)
 (Scalability problem) ---> At SoundCloud we talked many times about this
 Does this apply to mobile? Of course, nowadays they have same or even more complexity: it is not just a dumb client
-that showes data: we struggle with battery life, connections availability, performance, complex UIs, complex business logic, etc
+that shows data: we struggle with battery life, connections availability, performance, complex UIs, complex business logic, etc
 In order to support all this we cannot build a house from the roof
 
 
@@ -73,9 +73,9 @@ Show the video of github in 3D and all the contributions (https://github.com/aca
 
 #9 
 What can we do in order to support Big mobile code bases?
-#Disclaimer: no silver bullets...(the small letters) joke maybe and put it very very small...no one reads the small letter...
-So I would like to walk you through different aspects that I consider very importants when dealing with these kind of problems.
-I will focus mainly on code base but it is worth mentioning other aspects like Team Organization, Processes we have, and how to work together. 
+#Disclaimer: no silver bullets...(the small letters) joke maybe and put it very very small...no one reads ever the small letters...
+So I would like to walk you through different aspects that I consider very important when dealing with these kind of problems.
+I will focus mainly on code but it is worth mentioning other aspects like Team Organization, Processes we have, and how to work together. 
 (main focus but I would like to mention other aspects that are important in order to support what I'm mentioning here)
 
 
@@ -109,7 +109,7 @@ Codebase
 
 	- Documentation (it is always outdated but some minimun is important: code should be self explanatory: example of it and contra example). At least a few pictures of the architecture: good for onboarding people. 
 
-	Once we reach to a level of healthiness, what should we do? This is what we do at SoundCloud.
+	Once we reach a level of healthiness, what should we do? This is what we do at SoundCloud.
 	Keep it up!
 	- Work as a team
 	- Continuous Refactor (do not refactor without tests) ---> Continuos improvement 
